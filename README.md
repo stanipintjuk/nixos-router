@@ -17,7 +17,7 @@ So I might as well share my stuff :)
     externalInterface = "wlp0s20f0u8"; # or w/e interface you get your internet connection to your pc
   })
 ```
-Now just run `nixos-rebuild switch`, plugin in your Raspberry Pi (or any other device you want) 
+Now just run `nixos-rebuild switch`, plug in your Raspberry Pi (or any other device you want) 
 into the ethernet port, and BOOM! Magic! (You might have to reboot your PC though)
 
 ## What is the IP of my connected device?
