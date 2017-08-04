@@ -37,15 +37,17 @@ I have added a few parameters that you can add along side `internalInterface` an
 All of these parameters have default values.
 There are some parameters 
 
-_as I said: I am a n00blet at this, I don't even know what some parameters do.
-Those parameters will be explained with this emoji _¯\\\_(ツ)\_/¯
-
 | Parameter  | Explanation  | Default Value | Type  |
 | ---------- | ------------ | ------------- | ----- |
-| ipRange    | The ip range for your subnet. Your interface will be automatically assigned to XXX.XXX.XXX.1 | 192.168.2.0/24 | String in the form `XXX.XXX.XXX.0/24`
-| maxLeaseTime | ¯\\\_(ツ)\_/¯ | 604800 | String or Int
-| defaultLeaseTime | ¯\\\_(ツ)\_/¯  | 86400 | String or Int
+| ipRange    | The ip range of your subnet. Your interface (your "router") will be automatically assigned to XXX.XXX.XXX.1 | 192.168.2.0/24 | String in the form `XXX.XXX.XXX.0/24`
+| maxLeaseTime | maps to max-lease-time in dhcpd config | 604800 | String or Int
+| defaultLeaseTime | maps to default-lease-time in dhcpd config | 86400 | String or Int
 | dnsServers | A list of DNS Server IPs that you want your connected devices to use | [ "8.8.8.8" "8.8.4.4" ] | List of Strings
+
+## Wan't to yell?
+You're welcome to make an issue or write to stanislav.pintjuk@gmail.com, or contact me on telegram https://t.me/StaniBanani
+
+I am always open to yelling!
 
 ## Creds
 This NixOS expression was inspired .. _by my need for having my Raspberry Pi close to my PC at all times_ ...
