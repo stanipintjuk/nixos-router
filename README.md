@@ -1,4 +1,4 @@
-#NixOS Router
+# NixOS Router
 
 NixOS expression for creating a simple router from your ethernet ports.
 
