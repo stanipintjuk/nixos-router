@@ -22,8 +22,10 @@ in
   networking.nat.internalIPs = [ ipRange ];
   networking.nat.externalInterface = externalInterface;
   networking.interfaces."${internalInterface}" = { 
-    ipAddress = gatewayIP;
-    prefixLength = 24;
+    ipv4.addresses = [{
+      address = gatewayIP;
+      prefixLength = 24;
+    }];
   };
 
   services.dhcpd4 = let
